@@ -1,0 +1,26 @@
+{
+  "name": "openurvalla-solidity",
+  "version": "0.1.0",
+  "description": "Smart Contract library for Solidity",
+  "dependencies": {
+    "openzeppelin-solidity": "1.11.0"
+  },
+  "devDependencies": {
+    "truffle": "^4.1.13",
+    "chai": "^4.1.2",
+    "chai-bignumber": "^2.0.2"
+  },
+  "author": "Roman Exempliarov <urvala@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/urvalla/urvalla-solidity/issues"
+  },
+  "homepage": "https://github.com/urvalla/urvalla-solidity",
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "smart",
+    "contracts",
+    "security"
+  ]
+}
