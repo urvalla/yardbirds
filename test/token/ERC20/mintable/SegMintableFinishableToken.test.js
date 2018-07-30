@@ -10,6 +10,15 @@ contract('SegMintableFinishableToken', function ([owner, minter, anotherAccount]
     this.token = await SegMintableFinishableToken.new({ from: owner });
   });
 
-  shouldBehaveLikeSegMintableToken([owner, minter, anotherAccount]);
-  shouldBehaveLikeSegMintableFinishableToken([owner, minter, anotherAccount]);
+  describe('SegMintableToken behaviour', function () {
+    shouldBehaveLikeSegMintableToken([owner, minter, anotherAccount]);
+  });
+
+  describe('SegMintableFinishableToken behaviour', function () {
+    beforeEach(async function () {
+      await this.token.transferMinter(minter, { from: owner });
+    });
+
+    shouldBehaveLikeSegMintableFinishableToken([owner, minter, anotherAccount]);
+  });
 });

@@ -7,5 +7,7 @@ contract('SegMintableToken', function ([owner, nextMinter, anotherAccount]) {
     this.token = await SegMintableToken.new({ from: owner });
   });
 
-  shouldBehaveLikeSegMintableToken([owner, nextMinter, anotherAccount]);
+  describe('SegMintableToken behaviour', function () {
+    shouldBehaveLikeSegMintableToken([owner, nextMinter, anotherAccount]);
+  });
 });
