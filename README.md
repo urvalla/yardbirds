@@ -11,3 +11,38 @@ The philosophy behind library is based on:
 * Mantainablity is also a human-mistake tolerancy (where possible)
 * Entry-point contracts (which are called directly by users) should be replaced much less often than internal (for example ERC20 & ERC721)
 * Entry-point contracts should be simple for not being upgraded frequently
+
+## Getting Started
+
+OpenUrvalla integrates with [Truffle](https://github.com/ConsenSys/truffle) and [Embark](https://github.com/embark-framework/embark/).
+
+### truffle
+
+To use with Truffle, first install it and initialize your project with `truffle init`.
+
+```sh
+npm install -g truffle
+mkdir myproject && cd myproject
+truffle init
+```
+
+### Embark
+
+To use with Embark, first install it and initialize your project with `embark new MyApp`.
+
+```sh
+npm install -g embark
+embark new MyApp
+cd MyApp
+```
+
+## Contracts
+
+* **token**
+	* **ERC20**
+		* **mintable**
+			* SegMintableToken - OpenZeppelin's MintableToken with segregated transferrable minter role
+			* SegMintableFinishableToken - SegMintableToken with ability to finish minting forever
+
+## License
+Code released under the [MIT License](https://github.com/urvalla/openurvalla-solidity/blob/master/LICENSE).
