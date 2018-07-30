@@ -6,8 +6,8 @@ OpenUrvalla is based on [OpenZeppelin](https://github.com/OpenZeppelin/openzeppe
 
 The philosophy behind library is based on:
 * Decentralised smart-contract based applications should be upgradable and mantainable just like any other application
-* High modularity is good for the upgradability and mantainablity
-* Segregating responsibilities is good for high modularity
-* External contracts (which are called directly by users) should be replaced much less often than internal, especially ERC20 & ERC721
-* External contracts should be simple and delegate logic to internal contracts
-* Human-mistake tolerancy (where possible), which is good for mantainablity
+* Upgradability and mantainablity can be achieved by modularity
+* Modularity can be achieved by segregating responsibilities
+* Mantainablity is also a human-mistake tolerancy (where possible)
+* Entry-point contracts (which are called directly by users) should be replaced much less often than internal (for example ERC20 & ERC721)
+* Entry-point contracts should be simple for not being upgraded frequently
