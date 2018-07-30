@@ -9,7 +9,7 @@ import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
  * @dev ERC20 Token:
  * - With mintable token creation
  * - Segregated owner and minter
- * - Without explicit finish or pause (you can set minter to zero-address to stop minting)
+ * - Without explicit finish or pause (you can still set minter to zero-address to stop minting)
  * Based on code by OpenZeppelin: https://github.com/OpenZeppelin/zeppelin-solidity
  * which is based on code by TokenMarketNet: https://github.com/TokenMarketNet/ico/blob/master/contracts/MintableToken.sol
  */

@@ -19,7 +19,7 @@ function shouldBehaveLikeSegMintableToken ([owner, nextMinter, anotherAccount]) 
     })
   }
 
-  describe('as a basic mintable token', function () {
+  describe('as a mintable token', function () {
     describe('after token creation', function () {
       it('sender should be token owner', async function () {
         const tokenOwner = await this.token.owner({ from: owner });
@@ -32,7 +32,7 @@ function shouldBehaveLikeSegMintableToken ([owner, nextMinter, anotherAccount]) 
       });
     });
 
-    describe('transferMinter', function () {
+    describe('.transferMinter', function () {
       it('changes minter after transfer', async function () {
         await this.token.transferMinter(nextMinter);
         const minter = await this.token.minter();
@@ -49,7 +49,7 @@ function shouldBehaveLikeSegMintableToken ([owner, nextMinter, anotherAccount]) 
       });
     });
 
-    describe('mint', function () {
+    describe('.mint', function () {
       const amount = 100;
 
       beforeEach(async function () {
