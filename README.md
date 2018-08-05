@@ -1,8 +1,8 @@
-# OpenUrvalla Solidity
+# Yardbirds Solidity
 
-OpenUrvalla is a library for writing flexible modular [Smart Contract](https://en.wikipedia.org/wiki/Smart_contract) applications on Ethereum.
+Yardbirds is a library for writing flexible modular [Smart Contract](https://en.wikipedia.org/wiki/Smart_contract) applications on Ethereum.
 
-OpenUrvalla is based on [OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-solidity) library and provides modificated and extended contracts to cover surtain usecases.
+Yardbirds is based on [OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-solidity) library and provides modificated and extended contracts to cover surtain usecases.
 
 * Decentralised smart-contract based applications should be upgradable and mantainable just like any other application
 * Upgradability and mantainablity can be achieved by modularity
@@ -13,7 +13,7 @@ OpenUrvalla is based on [OpenZeppelin](https://github.com/OpenZeppelin/openzeppe
 
 ## Getting Started
 
-OpenUrvalla integrates with [Truffle](https://github.com/ConsenSys/truffle) and [Embark](https://github.com/embark-framework/embark/).
+Yardbirds integrates with [Truffle](https://github.com/ConsenSys/truffle) and [Embark](https://github.com/embark-framework/embark/).
 
 ### truffle
 
@@ -44,4 +44,4 @@ cd MyApp
 			* SegMintableFinishableToken - SegMintableToken with ability to finish minting forever
 
 ## License
-Code released under the [MIT License](https://github.com/urvalla/openurvalla-solidity/blob/master/LICENSE).
+Code released under the [MIT License](https://github.com/urvalla/yardbirds/blob/master/LICENSE).

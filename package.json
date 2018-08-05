@@ -1,5 +1,5 @@
 {
-  "name": "openurvalla-solidity",
+  "name": "yardbirds",
   "version": "0.1.1",
   "description": "Smart Contract library for Solidity",
   "dependencies": {
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/urvalla/openurvalla-solidity.git"
+    "url": "https://github.com/urvalla/yardbirds.git"
   },
   "bugs": {
-    "url": "https://github.com/urvalla/openurvalla-solidity/issues"
+    "url": "https://github.com/urvalla/yardbirds/issues"
   },
-  "homepage": "https://github.com/urvalla/openurvalla-solidity",
+  "homepage": "https://github.com/urvalla/yardbirds",
   "keywords": [
     "solidity",
     "ethereum",
