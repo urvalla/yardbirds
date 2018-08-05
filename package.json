@@ -12,10 +12,17 @@
   },
   "author": "Roman Exempliarov <urvala@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/urvalla/urvalla-solidity/issues"
+  "scripts": {
+    "test": "truffle test"
   },
-  "homepage": "https://github.com/urvalla/urvalla-solidity",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/urvalla/openurvalla-solidity.git"
+  },
+  "bugs": {
+    "url": "https://github.com/urvalla/openurvalla-solidity/issues"
+  },
+  "homepage": "https://github.com/urvalla/openurvalla-solidity",
   "keywords": [
     "solidity",
     "ethereum",
