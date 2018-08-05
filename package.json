@@ -1,6 +1,6 @@
 {
   "name": "openurvalla-solidity",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Smart Contract library for Solidity",
   "dependencies": {
     "openzeppelin-solidity": "1.11.0"
