@@ -1,5 +1,6 @@
 # Yardbirds Solidity
 [![NPM Package](https://img.shields.io/npm/v/yardbirds.svg?style=flat-square)](https://www.npmjs.org/package/yardbirds)
+[![Build Status](https://img.shields.io/travis/urvalla/yardbirds.svg?branch=master&style=flat-square)](https://travis-ci.org/urvalla/yardbirds)
 
 Yardbirds is a library for writing flexible modular [Smart Contract](https://en.wikipedia.org/wiki/Smart_contract) applications on Ethereum.
 

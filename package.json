@@ -15,18 +15,21 @@
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
+    "solidity-coverage": "^0.5.4",
     "solium": "^1.1.7"
   },
   "author": "Roman Exempliarov <urvala@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "truffle test",
+    "test": "scripts/test.sh",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "lint:sol": "solium -d .",
     "lint:sol:fix": "solium -d . --fix",
     "lint:all": "npm run lint && npm run lint:sol",
-    "lint:all:fix": "npm run lint:fix && npm run lint:sol:fix"
+    "lint:all:fix": "npm run lint:fix && npm run lint:sol:fix",
+    "console": "truffle console",
+    "coverage": "scripts/coverage.sh",
   },
   "repository": {
     "type": "git",
