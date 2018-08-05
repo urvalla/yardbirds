@@ -38,9 +38,11 @@ cd MyApp
 ## Contracts
 
 * **token**
+	* **ownership**
+		* SafeTransferOwnable - Ownable contract with two-step ownership transfer (transfer & apply).
 	* **ERC20**
 		* **mintable**
-			* SegMintableToken - OpenZeppelin's MintableToken with segregated transferrable minter role
+			* SegMintableToken - MintableToken with segregated transferrable minter role
 			* SegMintableFinishableToken - SegMintableToken with ability to finish minting forever
 
 ## License
