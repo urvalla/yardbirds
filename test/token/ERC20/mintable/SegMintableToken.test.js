@@ -2,7 +2,6 @@ const { shouldBehaveLikeSegMintableToken } = require('./SegMintableToken.behavio
 const SegMintableToken = artifacts.require('SegMintableToken');
 
 contract('SegMintableToken', function ([owner, nextMinter, anotherAccount]) {
-
   beforeEach(async function () {
     this.token = await SegMintableToken.new({ from: owner });
   });

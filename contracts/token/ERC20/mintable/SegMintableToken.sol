@@ -15,7 +15,10 @@ import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
  */
 contract SegMintableToken is StandardToken, Ownable {
   event Mint(address indexed to, uint256 amount);
-  event MinterTransferred(address indexed previousMinter, address indexed newMinter);
+  event MinterTransferred(
+    address indexed previousMinter,
+    address indexed newMinter
+  );
 
   address public minter;
 
@@ -46,8 +49,8 @@ contract SegMintableToken is StandardToken, Ownable {
     address _to,
     uint256 _amount
   )
-    hasMintPermission
     public
+    hasMintPermission
     returns (bool)
   {
     totalSupply_ = totalSupply_.add(_amount);

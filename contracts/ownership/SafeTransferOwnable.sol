@@ -1,6 +1,7 @@
 pragma solidity ^0.4.24;
 
-import 'openzeppelin-solidity/contracts/ownership/Ownable.sol';
+import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
+
 
 /**
  * @title Ownable
@@ -18,6 +19,14 @@ contract SafeTransferOwnable is Ownable {
 
 
   /**
+   * @dev Throws if called by any account other than the newOwner.
+   */
+  modifier onlyProposedOwner() {
+    require(msg.sender == newOwner);
+    _;
+  }
+
+  /**
    * @dev Allows the current owner to propose control of the contract to a newOwner.
    * @param _newOwner The address to transfer ownership to.
    */
@@ -29,10 +38,9 @@ contract SafeTransferOwnable is Ownable {
   /**
    * @dev Allows the proposed newOwner to accept control of the contract.
    */
-  function acceptOwnership() public {
-      require(msg.sender == newOwner);
-      emit OwnershipTransferred(owner, newOwner);
-      owner = newOwner;
-      newOwner = address(0);
+  function acceptOwnership() public onlyProposedOwner {
+    emit OwnershipTransferred(owner, newOwner);
+    owner = newOwner;
+    newOwner = address(0);
   }
 }

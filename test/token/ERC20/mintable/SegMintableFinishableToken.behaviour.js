@@ -10,12 +10,12 @@ function shouldBehaveLikeSegMintableFinishableToken ([owner, minter, anotherAcco
   const accounts = {
     owner: owner,
     minter: minter,
-    anotherAccount: anotherAccount
-  }
+    anotherAccount: anotherAccount,
+  };
 
-  function withAccounts(accountNames, proc) {
+  function withAccounts (accountNames, proc) {
     accountNames.forEach(function (accountName) {
-      describe('(account: '+accountName+')', function () {
+      describe('(account: ' + accountName + ')', function () {
         proc(accounts[accountName], accountName);
       });
     });

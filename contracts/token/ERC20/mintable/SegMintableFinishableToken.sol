@@ -33,8 +33,8 @@ contract SegMintableFinishableToken is SegMintableToken {
     address _to,
     uint256 _amount
   )
-    canMint
     public
+    canMint
     returns (bool)
   {
     return super.mint(_to, _amount);
@@ -44,7 +44,12 @@ contract SegMintableFinishableToken is SegMintableToken {
    * @dev Function to stop minting new tokens.
    * @return True if the operation was successful.
    */
-  function finishMinting() onlyOwner canMint public returns (bool) {
+  function finishMinting()
+    public
+    onlyOwner
+    canMint
+    returns (bool)
+  {
     mintingFinished = true;
     emit MintFinished();
     return true;

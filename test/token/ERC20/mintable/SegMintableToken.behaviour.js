@@ -10,13 +10,13 @@ function shouldBehaveLikeSegMintableToken ([owner, nextMinter, anotherAccount]) 
   const accounts = {
     owner: owner,
     nextMinter: nextMinter,
-    anotherAccount: anotherAccount
-  }
+    anotherAccount: anotherAccount,
+  };
 
-  function withAccounts(accountNames, proc) {
+  function withAccounts (accountNames, proc) {
     accountNames.forEach(function (accountName) {
       proc(accounts[accountName], accountName);
-    })
+    });
   }
 
   describe('as a mintable token', function () {
@@ -41,7 +41,7 @@ function shouldBehaveLikeSegMintableToken ([owner, nextMinter, anotherAccount]) 
       });
 
       withAccounts(['nextMinter', 'anotherAccount'], function (account, accountName) {
-        it('should prevent non-owners ('+accountName+') from transfering', async function () {
+        it('should prevent non-owners (' + accountName + ') from transfering', async function () {
           const owner = await this.token.owner.call();
           owner.should.not.eq(account);
           await assertRevert(this.token.transferMinter(account, { from: account }));
@@ -76,7 +76,7 @@ function shouldBehaveLikeSegMintableToken ([owner, nextMinter, anotherAccount]) 
       });
 
       withAccounts(['owner', 'anotherAccount'], function (account, accountName) {
-        describe('when the sender ('+accountName+') has not the minting permission', function () {
+        describe('when the sender (' + accountName + ') has not the minting permission', function () {
           it('reverts', async function () {
             await assertRevert(this.token.mint(account, amount, { account }));
           });
